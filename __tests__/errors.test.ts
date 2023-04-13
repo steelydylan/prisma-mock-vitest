@@ -33,7 +33,7 @@ test("findFirstOrThrow", async () => {
     where: { id: 1 },
   })
   expect(accounts).toMatchInlineSnapshot(`
-Object {
+{
   "id": 1,
   "name": "sadfsdf",
   "sort": null,

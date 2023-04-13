@@ -1,4 +1,529 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PrismaClient where > Case inrelevant > Json: not 1`] = `
+[
+  {
+    "e_id": 2,
+    "json": {
+      "data": "second",
+    },
+    "userId": 2,
+    "value": "value 2",
+  },
+]
+`;
+
+exports[`PrismaClient where > Case inrelevant > Nested deep 1`] = `
+[
+  {
+    "accountId": 2,
+    "clicks": null,
+    "deleted": false,
+    "id": 2,
+    "name": "Dirk",
+    "role": "ADMIN",
+    "sort": null,
+    "uniqueField": "user 2",
+  },
+]
+`;
+
+exports[`PrismaClient where > Case inrelevant > date 1`] = `
+[
+  {
+    "authorId": null,
+    "created": 2020-02-01T06:00:00.000Z,
+    "id": 1,
+    "published": false,
+    "title": "Piet",
+    "updated": 2020-02-01T06:00:00.000Z,
+  },
+]
+`;
+
+exports[`PrismaClient where > Case inrelevant > gt 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+  {
+    "id": 3,
+    "name": "Sjors",
+    "sort": null,
+  },
+  {
+    "id": 4,
+    "name": "ABBY",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > Case inrelevant > gte 1`] = `
+[
+  {
+    "id": 1,
+    "name": "Piet",
+    "sort": null,
+  },
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+  {
+    "id": 3,
+    "name": "Sjors",
+    "sort": null,
+  },
+  {
+    "id": 4,
+    "name": "ABBY",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > Case inrelevant > lt 1`] = `
+[
+  {
+    "id": 1,
+    "name": "Piet",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > Case inrelevant > lte 1`] = `
+[
+  {
+    "id": 1,
+    "name": "Piet",
+    "sort": null,
+  },
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > Case inrelevant > not 1`] = `
+[
+  {
+    "id": 1,
+    "name": "Piet",
+    "sort": null,
+  },
+  {
+    "id": 3,
+    "name": "Sjors",
+    "sort": null,
+  },
+  {
+    "id": 4,
+    "name": "ABBY",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p false > No mode > AND (failing) 1`] = `[]`;
+
+exports[`PrismaClient where > caseInsensitive %p false > No mode > AND 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p false > No mode > Json: equals 1`] = `
+[
+  {
+    "e_id": 1,
+    "json": {
+      "data": "first",
+    },
+    "userId": 1,
+    "value": "value 1",
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p false > No mode > NOT 1`] = `
+[
+  {
+    "id": 3,
+    "name": "Sjors",
+    "sort": null,
+  },
+  {
+    "id": 4,
+    "name": "ABBY",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p false > No mode > Nested 1`] = `
+[
+  {
+    "accountId": 2,
+    "clicks": null,
+    "deleted": false,
+    "id": 2,
+    "name": "Dirk",
+    "role": "ADMIN",
+    "sort": null,
+    "uniqueField": "user 2",
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p false > No mode > OR 1`] = `
+[
+  {
+    "id": 1,
+    "name": "Piet",
+    "sort": null,
+  },
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p false > No mode > in (nested) 1`] = `
+[
+  {
+    "accountId": 1,
+    "clicks": null,
+    "deleted": false,
+    "id": 1,
+    "name": "Henk",
+    "role": "ADMIN",
+    "sort": null,
+    "uniqueField": "user 1",
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p false > No mode > in 1`] = `
+[
+  {
+    "id": 1,
+    "name": "Piet",
+    "sort": null,
+  },
+  {
+    "id": 3,
+    "name": "Sjors",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p false > No mode > multiple 1`] = `[]`;
+
+exports[`PrismaClient where > caseInsensitive %p false > No mode > notIn 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+  {
+    "id": 4,
+    "name": "ABBY",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p false > mode %p false > contains 1`] = `
+[
+  {
+    "id": 4,
+    "name": "ABBY",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p false > mode %p false > endsWith 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p false > mode %p false > equals 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p false > mode %p false > startsWith 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p false > mode %p true > contains 1`] = `
+[
+  {
+    "id": 4,
+    "name": "ABBY",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p false > mode %p true > endsWith 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p false > mode %p true > equals 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p false > mode %p true > startsWith 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p true > No mode > AND (failing) 1`] = `[]`;
+
+exports[`PrismaClient where > caseInsensitive %p true > No mode > AND 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p true > No mode > Json: equals 1`] = `
+[
+  {
+    "e_id": 1,
+    "json": {
+      "data": "first",
+    },
+    "userId": 1,
+    "value": "value 1",
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p true > No mode > NOT 1`] = `
+[
+  {
+    "id": 3,
+    "name": "Sjors",
+    "sort": null,
+  },
+  {
+    "id": 4,
+    "name": "ABBY",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p true > No mode > Nested 1`] = `
+[
+  {
+    "accountId": 2,
+    "clicks": null,
+    "deleted": false,
+    "id": 2,
+    "name": "Dirk",
+    "role": "ADMIN",
+    "sort": null,
+    "uniqueField": "user 2",
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p true > No mode > OR 1`] = `
+[
+  {
+    "id": 1,
+    "name": "Piet",
+    "sort": null,
+  },
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p true > No mode > in (nested) 1`] = `
+[
+  {
+    "accountId": 1,
+    "clicks": null,
+    "deleted": false,
+    "id": 1,
+    "name": "Henk",
+    "role": "ADMIN",
+    "sort": null,
+    "uniqueField": "user 1",
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p true > No mode > in 1`] = `
+[
+  {
+    "id": 1,
+    "name": "Piet",
+    "sort": null,
+  },
+  {
+    "id": 3,
+    "name": "Sjors",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p true > No mode > multiple 1`] = `[]`;
+
+exports[`PrismaClient where > caseInsensitive %p true > No mode > notIn 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+  {
+    "id": 4,
+    "name": "ABBY",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p true > mode %p false > contains 1`] = `
+[
+  {
+    "id": 4,
+    "name": "ABBY",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p true > mode %p false > endsWith 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p true > mode %p false > equals 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p true > mode %p false > startsWith 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p true > mode %p true > contains 1`] = `
+[
+  {
+    "id": 4,
+    "name": "ABBY",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p true > mode %p true > endsWith 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p true > mode %p true > equals 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
+
+exports[`PrismaClient where > caseInsensitive %p true > mode %p true > startsWith 1`] = `
+[
+  {
+    "id": 2,
+    "name": "Dirk",
+    "sort": null,
+  },
+]
+`;
 
 exports[`PrismaClient where Case inrelevant Json: not 1`] = `
 Array [

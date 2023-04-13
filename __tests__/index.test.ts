@@ -188,8 +188,8 @@ describe("PrismaClient", () => {
     const users = await client.user.findMany()
 
     expect(users).toMatchInlineSnapshot(`
-Array [
-  Object {
+[
+  {
     "accountId": 1,
     "clicks": null,
     "deleted": false,
@@ -199,7 +199,7 @@ Array [
     "sort": null,
     "uniqueField": "first",
   },
-  Object {
+  {
     "accountId": 1,
     "clicks": null,
     "deleted": false,
@@ -238,8 +238,8 @@ Array [
     const users = await client.user.findMany()
 
     expect(users).toMatchInlineSnapshot(`
-Array [
-  Object {
+[
+  {
     "accountId": 1,
     "clicks": null,
     "deleted": false,
@@ -435,13 +435,13 @@ Array [
     })
 
     expect(users).toMatchInlineSnapshot(`
-Array [
-  Object {
+[
+  {
     "accountId": null,
     "clicks": null,
     "deleted": false,
-    "guestOf": Array [
-      Object {
+    "guestOf": [
+      {
         "id": 1,
         "name": "New account",
         "sort": null,

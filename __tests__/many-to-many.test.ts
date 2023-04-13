@@ -56,11 +56,11 @@ test("Select", async () => {
   // This is 0 when it should be 1
   expect(documents.length).toBe(1)
   expect(documents).toMatchInlineSnapshot(`
-Array [
-  Object {
+[
+  {
     "name": "123",
-    "participants": Array [
-      Object {
+    "participants": [
+      {
         "accountId": 1,
         "clicks": null,
         "deleted": false,
@@ -103,11 +103,11 @@ test("Create", async () => {
   expect(documents.length).toBe(1)
   expect(documents[0].participants.length).toBe(1)
   expect(documents).toMatchInlineSnapshot(`
-Array [
-  Object {
+[
+  {
     "name": "123",
-    "participants": Array [
-      Object {
+    "participants": [
+      {
         "accountId": null,
         "clicks": null,
         "deleted": false,
@@ -124,7 +124,7 @@ Array [
 
 })
 
-xtest("connectOrCreate create", async () => {
+describe("connectOrCreate create", async () => {
 
   const prismaMock = await createPrismaClient()
 
@@ -155,11 +155,11 @@ xtest("connectOrCreate create", async () => {
   expect(documents.length).toBe(1)
   expect(documents[0].participants.length).toBe(1)
   expect(documents).toMatchInlineSnapshot(`
-Array [
-  Object {
+[
+  {
     "name": "123",
-    "participants": Array [
-      Object {
+    "participants": [
+      {
         "accountId": null,
         "clicks": null,
         "deleted": false,
