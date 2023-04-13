@@ -1,15 +1,15 @@
-# Prisma Mock
+# Vitest Prisma Mock
 
 This is a mock of the Prisma API intended for unit testing. All the data is stored in memory.
 
-The library `jest-mock-extended` is used, which means that if functionality you need is not implemented yet, you can mock it yourself.
+The library `vitest-mock-extended` is used, which means that if functionality you need is not implemented yet, you can mock it yourself.
 
 # Usage
 
 Simple example how to create a prisma mock instance:
 
 ```js
-import createPrismaMock from "prisma-mock"
+import createPrismaMock from "vitest-prisma-mock"
 
 let client
 
@@ -21,12 +21,12 @@ beforeEach(() => {
 An example how to mock a global prisma instance, as the default export in a "db" directory (like blitzjs):
 
 ```js
-import createPrismaMock from "prisma-mock"
-import { mockDeep, mockReset } from "jest-mock-extended"
+import createPrismaMock from "vitest-prisma-mock"
+import { mockDeep, mockReset } from "vitest-mock-extended"
 
-jest.mock("db", () => ({
+vitest.mock("db", () => ({
   __esModule: true,
-  ...jest.requireActual("db"),
+  ...vitest.requireActual("db"),
   default: mockDeep(),
 }))
 
@@ -79,7 +79,7 @@ The datamodel of the prisma client, value of `Prisma.dmmf.datamodel`.
 
 #### Arg: `client`
 
-A `jest-mock-extended` instance. If not provided, a new instance is created.
+A `vitest-mock-extended` instance. If not provided, a new instance is created.
 
 #### Arg: `caseInsensitive`
 
