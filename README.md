@@ -21,20 +21,22 @@ beforeEach(() => {
 An example how to mock a global prisma instance, as the default export in a "db" directory (like blitzjs):
 
 ```js
-import createPrismaMock from "vitest-prisma-mock"
-import { mockDeep, mockReset } from "vitest-mock-extended"
+vi.mock("@db", async () => {
+  // @ts-ignore
+  const { mockDeep } = await vi.importActual("vitest-mock-extended")
+  const actual = await vi.importActual("@db")
+  return {
+    // @ts-ignore
+    ...actual,
+    default: mockDeep(),
+  }
+});
 
-vitest.mock("db", () => ({
-  __esModule: true,
-  ...vitest.requireActual("db"),
-  default: mockDeep(),
-}))
-
-import db, { Prisma } from "db"
+import prisma, { Prisma } from '@db';
 
 beforeEach(() => {
-  mockReset(db)
-  createPrismaMock({}, Prisma.dmmf.datamodel)
+  // mockReset(prisma)
+  createPrismaMock({}, Prisma.dmmf.datamodel, prisma)
 })
 ```
 
