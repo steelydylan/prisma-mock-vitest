@@ -3,7 +3,7 @@ import {
   PrismaClientKnownRequestError,
   PrismaClientValidationError,
 } from "@prisma/client/runtime"
-import { mockDeep } from "jest-mock-extended"
+import { mockDeep } from "vitest-mock-extended"
 import HandleDefault, { ResetDefaults } from "./defaults"
 import { shallowCompare } from "./utils/shallowCompare"
 import { deepEqual } from "./utils/deepEqual"

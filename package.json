@@ -11,24 +11,24 @@
   ],
   "devDependencies": {
     "@prisma/client": "4.7.1",
-    "@types/jest": "^27.0.2",
     "cross-spawn": "^7.0.3",
     "env-cmd": "^10.1.0",
-    "jest": "^27.3.1",
-    "jest-mock-extended": "^2.0.4",
+    "jsdom": "^21.1.1",
     "prisma": "4.7.1",
-    "ts-jest": "^27.0.7",
     "typescript": "^4.4.4"
   },
   "scripts": {
     "preversion": "tsc",
     "build": "tsc",
-    "test": "jest",
+    "test": "vitest",
     "watch": "tsc --watch",
-    "test:postgres": "env-cmd -e postgres jest --maxWorkers=1"
+    "test:postgres": "env-cmd -e postgres vitest --maxWorkers=1"
   },
   "peerDependencies": {
     "@prisma/client": "^3.5.0 || ^4.7.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "vitest": "^0.30.1",
+    "vitest-mock-extended": "^1.1.3"
+  }
 }
